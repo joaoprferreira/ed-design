@@ -1,0 +1,112 @@
+@font-face {
+    src: url("./font/COMFORTAA.BOLD.TTF");
+    font-family: "COMFORTAA BOLD";
+}
+@font-face {
+    src: url("./font/COMFORTAA.LIGHT.TTF");
+    font-family: "COMFORTAA LIGHT";
+}
+@font-face {
+    src: url("./font/COMFORTAA.REGULAR.TTF");
+    font-family: "COMFORTAA REGULAR";
+}
+@font-face {
+    src: url("./font/ORATORSTD-SLANTED.OTF");
+    font-family: "ORATORSTD";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+/* header logo */
+.nav-bar div{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.nav-bar div img{
+    padding: 15px ;
+}
+/* barra de navegaçao */
+.nav-bar nav{
+    display: flex;
+    align-items: center;
+}
+.nav-bar nav ul{
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 100%;
+    
+}
+.nav-bar nav ul li{
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+    padding: 0px 20px;
+    height: 100%;
+    transition: .5s;
+    text-transform: uppercase;
+    font-family: COMFORTAA BOLD;
+}
+.nav-bar nav ul li:hover{
+    background-color: blueviolet;
+    transition: .5s;
+
+}
+/* texto do meio  */
+section{
+    height:80vh ;
+    background-image: url(./image/background.png);
+    background-position: center;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section p{
+    font-size: 40px;
+    background-color:rgba(0, 0, 0, 0.39);
+    border: solid rgba(255, 255, 255, 0.527);
+    color: white;
+    height: 250px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px  
+
+
+    
+}
+
+/* footer */
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul {
+    color: white;
+    list-style: none;
+}
+footer div #logodevs{
+    width: 100px;
+}
+.social {
+    display: flex;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+}
