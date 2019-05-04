@@ -23,6 +23,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background: black;
+}
 /* header */
 .nav-bar{
     display: flex;
@@ -52,7 +55,7 @@
     height: 100%;
     
 }
-.nav-bar nav ul li{
+.nav-bar nav ul li {
     display: flex;
     justify-content: space-around;    
     align-items: center;
@@ -62,10 +65,35 @@
     text-transform: uppercase;
     font-family: COMFORTAA LIGHT;
 }
-.nav-bar nav ul li:hover{
-    background-color: rgb(0, 139, 194);
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+    padding: 0px 20px;
+    height: 100%;
+    transition: .5s;
+    text-transform: uppercase;
+    font-family: COMFORTAA LIGHT;
+
+}
+.nav-bar ul a:hover{
+    background-color: rgb(0, 139, 194)  ;
     transition: .5s;
 
+}
+a{
+    cursor: pointer;
+
+}
+.active{
+    background-color: rgb(0, 139, 194);
+
+}
+a:hover{
+    background-color: rgb(95, 166, 194);
+    z-index: 99;
 }
 /* texto do meio  */
 section{
@@ -83,16 +111,10 @@ section p{
     background-color:rgba(0, 0, 0, 0.39);
     border: solid rgba(255, 255, 255, 0.527);
     color: white;
-    height: 250px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 40px;
+    text-align: center;
+    padding: 40px 40px;
     font-family: COMFORTAA LIGHT;
-    
-
-
-    
+  
 }
 
 /* footer */
@@ -117,4 +139,20 @@ footer div #logodevs{
     width: 30px;
     height: 30px;
     padding: 20px;
+}
+.menu-icon{
+    display: none;
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top:50px;
+    right: 50px;
+}
+@media screen and (max-width:768px){
+.mobile{
+    display: flex;
+}
+.desktop{
+    display: none !important;
+}
 }
